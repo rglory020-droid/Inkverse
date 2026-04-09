@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>InkVerse</title>
         <link rel="stylesheet" href="style.css">
+        
     </head>
 
     <body class="entry-page">
@@ -12,23 +13,52 @@
             <section class="entry-form-section">
                 <h1 class="glow-title">Welcome to InkVerse</h1>
                 <p class="glow-subtitle">Enter to access the webtoon universe</p>
-            <form id="login-form">
-                <input type="text" placeholder="Username" required>
-                <input type="password" placeholder="Password" required>
-                <button type="submit" class="neon-button">Enter InkVerse</button>
-            </form>
+                
+                <form id="login-form">
+                    <input type="text" placeholder="Username" required>
+                    <input type="password" placeholder="Password" required>
+                    <button type="submit" class="neon-button">Enter InkVerse</button>
+                </form>
+
+                 <div class="auth-options">
+                    <p>
+                        Don't have an account? <a href="signup.html">Sign Up</a>
+                    </p>
+                    <p>
+                        Forgot Password? <a href="forgot-password.html">Click here</a>
+                    </p>
+                </div>
             </section>
         </main>
 
         <script>
-document.getElementById("login-form").addEventListener("submit", function(e){
-    e.preventDefault(); 
-    window.location.href = "home.html"; 
-});
-</script>
+            document.getElementById("login-form").addEventListener("submit", function(e){
+                e.preventDefault();
+                
+                const usernameInput = document.querySelector('input[placeholder="Username"]');
+                const passwordInput = document.querySelector('input[placeholder="Password"]');
 
-</body>
-</html>
+                
+                const hasSignedUp = localStorage.getItem('hasSignedUp');
 
+                if (usernameInput.value && passwordInput.value) {
+                    if (hasSignedUp === 'true') {
+                        
+                        alert("Welcome back!"); 
+                        window.location.href = "home.html"; 
+                    } else {
+                       
+                        alert("Please sign up first to create an account and access InkVerse.");
+                        window.location.href = "signup.html"; 
+                    }
+                } else {
+                    
+                    alert("Please enter your username and password.");
+                }
+                
+            });
+
+          
+        </script>
     </body>
 </html>
