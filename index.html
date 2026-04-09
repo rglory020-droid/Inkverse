@@ -3,62 +3,116 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>InkVerse</title>
+        <title>InkVerse - Sign Up</title>
         <link rel="stylesheet" href="style.css">
-        
+        <style>
+            
+            body.signup-page {
+                background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); 
+            }
+            .signup-form-section, .forgot-password-form-section {
+                text-align: center;
+                background: rgba(0,0,0,0.8);
+                padding: 50px;
+                border-radius: 15px;
+                box-shadow: 0 0 25px rgba(0,255,204,0.3);
+                width: 100%;
+                max-width: 400px; 
+                margin: 20px auto; 
+            }
+            .signup-form-section h1, .forgot-password-form-section h1 {
+                animation: glowPulse 2s infinite alternate;
+                font-size: 2.5rem; 
+                color: #00ffcc;
+                text-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc;
+                margin-bottom: 25px;
+            }
+            .signup-form-section p, .forgot-password-form-section p {
+                color: #ccc;
+                margin-bottom: 20px;
+            }
+            .signup-form-section input, .forgot-password-form-section input {
+                width: calc(100% - 24px); 
+                padding: 12px;
+                margin-bottom: 15px;
+                border: 1px solid #00f2ff;
+                background-color: #1a1a2e; 
+                color: #fff; 
+                border-radius: 5px;
+                font-size: 1rem;
+                box-shadow: 0 0 10px rgba(0,255,204,0.2);
+                box-sizing: border-box;
+            }
+            .signup-form-section button, .forgot-password-form-section button {
+                margin-top: 15px;
+                padding: 12px 25px;
+                border: none;
+                border-radius: 8px;
+                background: #00ffcc;
+                color: black;
+                font-size: 1.2rem;
+                cursor: pointer;
+                transition: 0.3s;
+                box-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc;
+                width: 100%;
+            }
+            .signup-form-section button:hover, .forgot-password-form-section button:hover {
+                background: #00e6b8;
+                box-shadow: 0 0 20px #00ffcc, 0 0 40px #00ffcc;
+                transform: scale(1.02);
+            }
+            .auth-options-signup, .auth-options-forgot {
+                margin-top: 25px;
+                font-size: 0.9em;
+            }
+            .auth-options-signup p, .auth-options-forgot p {
+                margin-bottom: 10px;
+            }
+             .auth-options-signup a, .auth-options-forgot a {
+                color: #00f2ff;
+                text-decoration: none;
+                font-weight: bold;
+            }
+            .auth-options-signup a:hover, .auth-options-forgot a:hover {
+                text-decoration: underline;
+            }
+        </style>
     </head>
 
-    <body class="entry-page">
+    <body class="signup-page">
         <main style="height:100vh; display:flex; justify-content:center; align-items:center;">
-            <section class="entry-form-section">
-                <h1 class="glow-title">Welcome to InkVerse</h1>
-                <p class="glow-subtitle">Enter to access the webtoon universe</p>
+            <section class="signup-form-section">
+                <h1 class="glow-title">Create Your Account</h1>
+                <p>Join the InkVerse community!</p>
                 
-                <form id="login-form">
+                <form id="signup-form">
                     <input type="text" placeholder="Username" required>
+                    <input type="email" placeholder="Email Address" required>
                     <input type="password" placeholder="Password" required>
-                    <button type="submit" class="neon-button">Enter InkVerse</button>
+                    <input type="password" placeholder="Confirm Password" required>
+                    <button type="submit" class="neon-button">Sign Up</button>
                 </form>
 
-                 <div class="auth-options">
+                <div class="auth-options-signup">
                     <p>
-                        Don't have an account? <a href="sign-up.html">Sign Up</a>
-                    </p>
-                    <p>
-                        Forgot Password? <a href="forgot-password.html">Click here</a>
+                        Already have an account? <a href="index.html">Log In</a>
                     </p>
                 </div>
             </section>
         </main>
 
         <script>
-            document.getElementById("login-form").addEventListener("submit", function(e){
-                e.preventDefault();
+            document.getElementById("signup-form").addEventListener("submit", function(e){
+                e.preventDefault(); 
                 
-                const usernameInput = document.querySelector('input[placeholder="Username"]');
-                const passwordInput = document.querySelector('input[placeholder="Password"]');
+                
+                localStorage.setItem('hasSignedUp', 'true');
+                
 
                 
-                const hasSignedUp = localStorage.getItem('hasSignedUp');
-
-                if (usernameInput.value && passwordInput.value) {
-                    if (hasSignedUp === 'true') {
-                        
-                        alert("Welcome back!"); 
-                        window.location.href = "home.html"; 
-                    } else {
-                       
-                        alert("Please sign up first to create an account and access InkVerse.");
-                        window.location.href = "sign-up.html"; 
-                    }
-                } else {
-                    
-                    alert("Please enter your username and password.");
-                }
-                
+                alert("Account created! You can now log in.");
+                window.location.href = "index.html"; 
             });
-
-          
         </script>
     </body>
 </html>
