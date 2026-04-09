@@ -1,18 +1,12 @@
 document.addEventListener("DOMContentLoaded", () => {
-  
-  .then(res => {
-    if (!res.ok) throw new Error("Footer not found");
-    return res.text();
-  })
-  .then(data => {
-    document.getElementById("footer").innerHTML = data;
-  })
-  .catch(err => console.error("Footer error:", err));
-  
+  // Load Navbar
   const navbarContainer = document.getElementById("navbar");
   if (navbarContainer) {
     fetch("./navbar.html")
-      .then(res => res.text())
+      .then(res => {
+        if (!res.ok) throw new Error("Navbar not found");
+        return res.text();
+      })
       .then(data => {
         navbarContainer.innerHTML = data;
         navbarContainer.style.display = "block"; 
@@ -23,11 +17,14 @@ document.addEventListener("DOMContentLoaded", () => {
       });
   }
 
-  
+  // Load Footer
   const footerContainer = document.getElementById("footer");
   if (footerContainer) {
     fetch("./footer.html")
-      .then(res => res.text())
+      .then(res => {
+        if (!res.ok) throw new Error("Footer not found");
+        return res.text();
+      })
       .then(data => {
         footerContainer.innerHTML = data;
         footerContainer.style.display = "block";
@@ -38,7 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
       });
   }
 
- 
+  // Search and Mic
   const micButton = document.getElementById('micButton');
   const searchInput = document.getElementById('searchInput');
 
