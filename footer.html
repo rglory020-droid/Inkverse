@@ -1,0 +1,59 @@
+<script>
+fetch("footer.html")
+  .then(res => res.text())
+  .then(data => document.getElementById("footer").innerHTML = data);
+</script>
+<footer class="site-footer">
+    <p>&copy; 2026 InkVerse. All rights reserved.</p>
+
+    <div class="social-icons">
+        <p>Follow us:</p>
+        <a href="https://www.youtube.com/@Lezhin/" target="_blank">
+            <img src="images/youtube.jpg" alt="YouTube" class="social-logo">
+        </a>
+        <a href="https://www.tiktok.com/" target="_blank">
+            <img src="images/tiktok.jpg" alt="TikTok" class="social-logo">
+        </a>
+        <a href="https://x.com/webtoonofficial" target="_blank">
+            <img src="images/twitter.jpg" alt="Twitter" class="social-logo">
+        </a>
+        <a href="https://www.facebook.com/webtoonofficial/?_rdc=2&_rdr#/" target="_blank">
+            <img src="images/facebook.jpg" alt="Facebook" class="social-logo">
+        </a>
+        <a href="https://discord.com/channels/1087512109128089650/1087512113033007147/" target="_blank">
+            <img src="images/discord logo.jpg" alt="Discord" class="social-logo">
+        </a>
+    </div>
+</footer>
+
+
+<style>
+.site-footer {
+    background-color: #0f3460;
+    color: #00ffcc;
+    text-align: center;
+    padding: 20px 0;
+    font-family: Arial, sans-serif;
+    border-top: 2px solid #00ffcc;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin: 0 8px;
+}
+
+.social-icons img {
+    width: 32px; 
+    height: 32px; 
+    object-fit: contain;
+    transition: transform 0.3s;
+}
+
+.social-icons img:hover {
+    transform: scale(1.2); 
+}
+</style>

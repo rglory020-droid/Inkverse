@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InkVerse - Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="tech-vibe"> 
+    <header>
+        <div class="logo-container">
+            <img src="images/logo.png" alt="InkVerse Logo" class="logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home Entry</a></li> 
+                <li><a href="home.html">Home</a></li>
+                <li><a href="library.html">Library</a></li>
+                <li class="dropdown">
+        <a href="#">Categories ▼</a>
+        <ul class="dropdown-menu">
+        <li><a href="genre.html">Genre</a></li>
+        <li><a href="status.html">Status</a></li>
+    </ul>
+</li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </nav>
+       <div class="search-container" style="text-align:center; margin:20px 0;">
+  <input type="text" 
+         id="searchInput" 
+         placeholder="Search webtoons..." 
+         onkeypress="if(event.key==='Enter'){handleSearch()}" 
+         style="padding:10px; width:300px; font-size:16px;">
+  <img src="images/mic.jpg" id="micButton" alt="Voice Search" class="mic-icon">
+</div>
+ <ul id="searchResults" class="search-results"></ul>
+    </header>
+
+    <main>
+        <section class="homepage-banner">
+           
+            <div class="banner">
+    <h1>InkVerse</h1>
+</div>
+
+<div class="welcome-text">
+    <h2>Welcome to the InkVerse!</h2>
+    <p>
+        Step into the world of webtoons! Track your favorite series, 
+        discover new stories and connect with your fellow fans. 
+        Your adventure starts here!
+    </p>
+    <p class="sub">(Manhwa, Manhua, Manga)</p>
+</div>
+        </section>
+
+        <section class="platform-logos">
+            <h2>Explore Popular Platforms</h2>
+            <div class="platform-grid">
+                <div class="platform-item">
+                    
+                    <img src="images/webtoon.webp" alt="Webtoon Platform Logo" class="platform-logo">
+                    <p>Read a wide range of webtoons from different genres. Click to visit!</p>
+                    <a href="https://www.webtoons.com/en/" class="neon-button-small">Visit Webtoon</a>
+                </div>
+                <div class="platform-item">
+                    <a href="https://tapas.io/" target="_blank" class="platform-item"></a>
+                    <img src="images/tapas.jpg" alt="Tapas Platform Logo" class="platform-logo">
+                    <p>Discover exclusive content and indie creators. Click to visit!</p>
+                    <a href="https://tapas.io/" class="neon-button-small">Visit Tapas</a>
+                </div>
+                <div class="platform-item">
+                    <a href="https://www.lezhinus.com/en" target="_blank" class="platform-item"></a>
+                    <img src="images/lenzhin.jpg" alt="Lezhin Platform Logo" class="platform-logo">
+                    <p>Dive into mature stories and award-winning series. Click to visit!</p>
+                    <a href="https://www.lezhinus.com/en" class="neon-button-small">Visit Lezhin</a>
+                </div>
+                <div class="platform-item">
+                    <a href="https://manta.net/en" target="_blank" class="platform-item"></a>
+                    <img src="images/MantaLogo.webp" alt="Manta Platform Logo" class="platform-logo">
+                    <p>Enjoy a curated selection of trending and popular titles. Click to visit!</p>
+                    <a href="https://manta.net/en" class="neon-button-small">Visit Manta</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="intro-video-section">
+            <p>Get a glimpse of the exciting content waiting for you!</p>
+            <div class="video-container">
+                <div class="video-wrapper">
+                    <h3 class="video-title">Next Masterpiece?Top 10 Manhwa...</h3>
+                    <video id="videoA" controls width="100%">
+                        <source src="videos/videoplayback (1).mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <p class="origin-link">Watch on YouTube: <a href="https://www.youtube.com/watch?v=XsX3ATc3FbA&list=RD4mxG4-aGXrk&index=2" target="_blank">Link to Origin Video on YouTube</a></p>
+                </div>
+                <div class="video-wrapper">
+                    <h3 class="video-title">[Official MV] SPAKLZ 'COMET' IS OUT NOW!</h3>
+                    <video id="videoB" controls width="100%">
+                        <source src="videos/videoplayback.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <p class="origin-link">Watch on YouTube: <a href="https://www.youtube.com/watch?v=9ugkrJ8F7XY&t=1s" target="_blank">Link to Origin Video on YouTube</a></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+  <footer class="site-footer">
+    <p>&copy; 2026 InkVerse. All rights reserved.</p>
+    <div class="social-icons">
+      <p>Follow us:</p>
+      <a href="#"><img src="images/youtube.jpg" alt="YouTube"></a>
+      <a href="#"><img src="images/tiktok.jpg" alt="TikTok"></a>
+      <a href="#"><img src="images/twitter.jpg" alt="Twitter"></a>
+      <a href="#"><img src="images/facebook.jpg" alt="Facebook"></a>
+      <a href="#"><img src="images/discord logo.jpg" alt="Discord"></a>
+    </div>
+  </footer>
+<script src="script.js"></script>
+</body>
+</html>

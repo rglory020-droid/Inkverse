@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Status - InkVerse</title>
+<link rel="stylesheet" href="style.css">
+<style>
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  text-align: center;
+}
+
+.card img {
+  width: 150px;
+  height: 200px;
+  border-radius: 10px;
+  border: 2px solid #00ffcc;
+}
+</style>
+</head>
+
+
+<body style="background:#121212; color:white; font-family:Arial;">
+  <header>
+        <div class="logo-container">
+            <img src="images/logo.png" alt="InkVerse Logo" class="logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="library.html">Library</a></li>
+               <li class="dropdown">
+    <a href="#">Categories ▼</a>
+    <ul class="dropdown-menu">
+        <li><a href="genre.html">Genre</a></li>
+        <li><a href="status.html">Status</a></li>
+    </ul>
+</li>
+            </ul>
+        </nav>
+      <div class="search-container" style="text-align:center; margin:20px 0;">
+  <input type="text" 
+         id="searchInput" 
+         placeholder="Search webtoons..." 
+         onkeypress="if(event.key==='Enter'){handleSearch()}" 
+         style="padding:10px; width:300px; font-size:16px;">
+  <img src="images/mic.jpg" id="micButton" alt="Voice Search" class="mic-icon">
+</div>
+  <ul id="searchResults" class="search-results"></ul>
+    </div>
+  </header>
+
+    <div class="search-ui-container"></div>
+
+<h1 style="color:#00ffcc; text-align:center;">Status</h1>
+
+
+<h2 style="color:#38e4ea; margin-left:20px;">Ongoing</h2>
+<div class="grid">
+
+  <div class="card">
+    <img src="images/eleceed.jpg">
+    <p>Eleceed</p>
+  </div>
+
+  <div class="card">
+    <img src="images/infinite mage.jpg">
+    <p>Infinite Mage</p>
+  </div>
+
+  <div class="card">
+    <img src="images/the world after the fall.jpg">
+    <p>The World After The Fall</p>
+  </div>
+
+    <div class="card">
+    <img src="images/the almighty daughter runs the world.jpg">
+    <p>The Almighty Daughter Runs The World</p>
+  </div>
+
+      <div class="card">
+    <img src="images/reincarnator.jpg">
+    <p>Reincarnator</p>
+  </div>
+
+      <div class="card">
+    <img src="images/the heir.jpg">
+    <p>The Heir</p>
+  </div>
+
+      <div class="card">
+    <img src="images/revenge of the baskerville bloodhound.jpg">
+    <p>Revenge Of The Baskerville Bloodhound</p>
+  </div>
+
+      <div class="card">
+    <img src="images/regas.jpg">
+    <p>Regas</p>
+  </div>
+
+      <div class="card">
+    <img src="images/mercenary enrollment.jpg">
+    <p>Mercenary Enrollment</p>
+  </div>
+
+      <div class="card">
+    <img src="images/fighting ward.jpg">
+    <p>Fighting Ward</p>
+  </div>
+
+    <div class="card">
+    <img src="images/orv.jpg">
+    <p>Omnidcient Reader's Viewpoint</p>
+  </div>
+
+</div>
+
+
+<h2 style="color:#a7d07f; margin-left:20px;">Completed</h2>
+<div class="grid">
+
+  <div class="card">
+    <img src="images/who made me a princess.jpg">
+    <p>Who Made Me A Princess</p>
+  </div>
+
+      <div class="card">
+    <img src="images/a tidal wave of glory.jpg">
+    <p>A Tidal Wave of Glory</p>
+  </div>
+
+      <div class="card">
+    <img src="images/gourment gamer.jpg">
+    <p>Gourment Gamer</p>
+  </div>
+
+      <div class="card">
+    <img src="images/tomb raider king.jpg">
+    <p>Tomb Raider King</p>
+  </div>
+
+      <div class="card">
+    <img src="images/roses and champagne.jpg">
+    <p>Roses and Champagne</p>
+  </div>
+
+      <div class="card">
+    <img src="images/low tide in twillight.jpg">
+    <p>Low Tide in Twillight</p>
+  </div>
+
+      <div class="card">
+    <img src="images/leviathan.jpg">
+    <p>Leviathan</p>
+  </div>
+
+      <div class="card">
+    <img src="images/the greatest state developer.jpg">
+    <p>The Greatest State Developer</p>
+  </div>
+
+      <div class="card">
+    <img src="images/unholy blood.jpg">
+    <p>Unholy Blood</p>
+  </div>
+
+      <div class="card">
+    <img src="images/light and shadow.jpg">
+    <p>Light and Shadow</p>
+  </div>
+
+      <div class="card">
+    <img src="images/her summon.jpg">
+    <p>Her Summon</p>
+  </div>
+
+</div>
+
+<footer class="site-footer">
+    <p>&copy; 2026 InkVerse. All rights reserved.</p>
+    <div class="social-icons">
+      <p>Follow us:</p>
+      <a href="#"><img src="images/youtube.jpg" alt="YouTube"></a>
+      <a href="#"><img src="images/tiktok.jpg" alt="TikTok"></a>
+      <a href="#"><img src="images/twitter.jpg" alt="Twitter"></a>
+      <a href="#"><img src="images/facebook.jpg" alt="Facebook"></a>
+      <a href="#"><img src="images/discord logo.jpg" alt="Discord"></a>
+    </div>
+   
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Genres - InkVerse</title>
+<link rel="stylesheet" href="style.css">
+<style>
+
+</style>
+</head>
+
+<body style="background:#121212; color:white; font-family:Arial;">
+   <header>
+        <div class="logo-container">
+            <img src="images/logo.png" alt="InkVerse Logo" class="logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="library.html">Library</a></li>
+               <li class="dropdown">
+    <a href="#">Categories ▼</a>
+    <ul class="dropdown-menu">
+        <li><a href="genre.html">Genre</a></li>
+        <li><a href="status.html">Status</a></li>
+    </ul>
+</li>
+            </ul>
+        </nav>
+        <div class="search-container" style="text-align:center; margin:20px 0;">
+  <input type="text" 
+         id="searchInput" 
+         placeholder="Search webtoons..." 
+         onkeypress="if(event.key==='Enter'){handleSearch()}" 
+         style="padding:10px; width:300px; font-size:16px;">
+  <img src="images/mic.jpg" id="micButton" alt="Voice Search" class="mic-icon">
+</div>
+  <ul id="searchResults" class="search-results"></ul>
+    </div>
+    </header>
+
+    <div class="search-ui-container"></div>
+<h1 style="color:#00ffcc; text-align:center;">Genres</h1>
+
+<section style="margin:30px;">
+  <div class="genres-grid">
+  <div class="genre-column">
+  <h2 style="color:#00ffcc;">Action / Fantasy / System</h2>
+  <ul class="multi-column">
+<li>Return to Player</li>
+<li>The Exiled Hero</li>
+<li>The Ember Knight</li>
+<li>King of the Octagon</li>
+<li>Double Click</li>
+<li>Supremely Talented Player</li>
+<li>The Returner’s Road to Retirement</li>
+<li>Divine Delivery</li>
+<li>The Dungeon Cleaning Life of a Once Genius Hunter</li>
+<li>Flagbearer</li>
+<li>Nebula's Civilization</li>
+<li>Teenage Mercenary</li>
+<li>The Reborn Young Lord is an Assassin</li>
+<li>Eleceed</li>
+<li>The Regressed Mercenary Has a Plan</li>
+<li>The Academy's Genius Swordsman</li>
+<li>Hidden Class Gravity User</li>
+<li>The Knight Only Lives Today</li>
+<li>Tower of God</li>
+<li>Surviving the Game as a Barbarian</li>
+<li>The Extra’s Academy Survival Guide</li>
+<li>The Lone Necromancer</li>
+<li>Ordeal</li>
+<li>Regression of the Close Combat Mage</li>
+<li>The World After the Fall</li>
+<li>The Last Adventurer</li>
+<li>Paranoid Mage</li>
+<li>Growth-Type Superhero</li>
+<li>The Stellar Swordmaster</li>
+<li>I Killed the Main Player</li>
+<li>Returned by the King</li>
+<li>Monster Eater</li>
+<li>Cleric of Decay</li>
+<li>66,666 Years: Advent of the Dark Mage</li>
+<li>Enrolling in the Transcendent Academy</li>
+<li>The Constellations Are My Disciples</li>
+<li>The Academy’s Sashimi Sword Master</li>
+<li>My S-Class Hunters</li>
+<li>Just a Goblin</li>
+<li>Time-Limited Genius Dark Knight</li>
+<li>Auto Hunting With My Clones</li>
+<li>Return of the Runebound Professor</li>
+<li>Hero Killer</li>
+<li>The Gardener in a Hunter World</li>
+  </ul>
+</div>
+
+<div class="genre-column">
+  <h2 style="color:#00ffcc;">Romance / Comedy</h2>
+  <ul>
+<li> Love 4 a Walk</li>
+<li></li>Down To Earth</li>
+<li>Childhood Friend Complex</li>
+<li>Selfish Romance</li>
+<li>Maybe Meant to Be</li>
+<li>Winter Before Spring</li>
+<li>Do You Still Like Me?</li>
+<li>Into the Rose Garden</li>
+<li>Written in the Stars</li>
+<li>Bailu and Li Yun</li>
+<li>Looks Like Me</li>
+<li>At Your Mercy</li>
+<li>Love Remedy</li>
+<li>Honey Trouble</li>
+<li>The Unexpected Neighbor</li>
+<li>If You Want Me</li>
+<li>Beyond the Memories</li>
+<li>Finding the Way</li>
+<li>To Make You Happy</li>
+<li>Cherry Cake</li>
+<li>December</li>
+<li>Say a Little Prayer</li>
+<li>In the Air: Be, be</li>
+  </ul>
+</div>
+
+
+<div class="genre-column">
+  <h2 style="color:#00ffcc;">Mystery/Crime</h2>
+  <ul>
+    <li>The Mafia Nanny</li>
+    <li>Private Call</li>
+    <li>Wolves Behind Bars</li>
+    <li>Stigma</li>
+    <li>The Age of Arrogance</li>
+    <li>The Heir</li>
+    <li>Insector</li>
+    <li>Disconnected from Reality</li>
+    <li>The Genius Spirited Streamer</li>
+    <li>The Phantom of the Opera</li>
+  </ul>
+</div>
+
+
+<div class="genre-column">
+  <h2 style="color:#00ffcc;">Historical/Isekai/Royalty</h2>
+  <ul>
+    <li>Not Your Typical Reincarnation Story</li>
+    <li>Duchess in Ruins</li>
+    <li>My Child Will Have a Different Father</li>
+    <li>The Dragon King’s Bride</li>
+    <li>Royal Wedding</li>
+    <li>I Thought My Time Was Up</li>
+    <li>You Can’t Kill Me: The Secret Bride of the Black Wolf</li>
+    <li>The Reason for the Twin Lady’s Disguise</li>
+    <li>Changing the Genre From Angst to Heartwarming</li>
+    <li>Baby Tyrant</li>
+    <li>I Became a Level 999 Demon Queen</li>
+  </ul>
+</div>
+
+<div class="genre-column">
+  <h2 style="color:#00ffcc;">BL/Omegaverse</h2>
+  <ul>
+    <li>Define the Relationship</li>
+    <li>Swallow You Whole</li>
+    <li>Low Tide in Twilight</li>
+    <li>Love is an Illusion! - Superstar</li>
+    <li>Love is an Illusion!</li>
+    <li>Love is an Illusion! - The Queen</li>
+    <li>Scent and Sensibility</li>
+    <li>Minmotion Syndrome</li>
+    <li>Smyrna and Capri</li>
+    <li>Bride for the Taking</li>
+    <li>Beta Testing</li>
+    <li>My Master, My Joo-in</li>
+    <li>The Alpha Agenda</li>
+    <li>Be My Beta</li>
+    <li>Cozy Obsession</li>
+    <li>Pheromone Shower - Omegaverse Short Stories</li>
+    <li>An Unsettling Scent</li>
+    <li>Pond Where Flowers Fall</li>
+    <li>Surge Towards You</li>
+  </ul>
+</div>
+</div>
+</section>
+<script src="script.js"></script>
+
+    <footer class="site-footer">
+    <p>&copy; 2026 InkVerse. All rights reserved.</p>
+    <div class="social-icons">
+      <p>Follow us:</p>
+      <a href="#"><img src="images/youtube.jpg" alt="YouTube"></a>
+      <a href="#"><img src="images/tiktok.jpg" alt="TikTok"></a>
+      <a href="#"><img src="images/twitter.jpg" alt="Twitter"></a>
+      <a href="#"><img src="images/facebook.jpg" alt="Facebook"></a>
+      <a href="#"><img src="images/discord logo.jpg" alt="Discord"></a>
+    </div>
+    
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

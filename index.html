@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>InkVerse</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body class="entry-page">
+        <main style="height:100vh; display:flex; justify-content:center; align-items:center;">
+            <section class="entry-form-section">
+                <h1 class="glow-title">Welcome to InkVerse</h1>
+                <p class="glow-subtitle">Enter to access the webtoon universe</p>
+            <form id="login-form">
+                <input type="text" placeholder="Username" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit" class="neon-button">Enter InkVerse</button>
+            </form>
+            </section>
+        </main>
+
+        <script>
+document.getElementById("login-form").addEventListener("submit", function(e){
+    e.preventDefault(); 
+    window.location.href = "home.html"; 
+});
+</script>
+
+</body>
+</html>
+
+    </body>
+</html>

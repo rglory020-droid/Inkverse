@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InkVerse - About Us</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="images/logo.png" alt="InkVerse Logo" class="logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="library.html">Library</a></li>
+               <li class="dropdown">
+    <a href="#">Categories ▼</a>
+    <ul class="dropdown-menu">
+        <li><a href="genre.html">Genre</a></li>
+        <li><a href="status.html">Status</a></li>
+    </ul>
+</li>
+            </ul>
+        </nav>
+        <div class="search-container" style="text-align:center; margin:20px 0;">
+  <input type="text" 
+         id="searchInput" 
+         placeholder="Search webtoons..." 
+         onkeypress="if(event.key==='Enter'){handleSearch()}" 
+         style="padding:10px; width:300px; font-size:16px;">
+  <img src="images/mic.jpg" id="micButton" alt="Voice Search" class="mic-icon">
+</div>
+  <ul id="searchResults" class="search-results"></ul>
+    </div>
+    </header>
+
+    <main>
+        <section class="about-us-section">
+            <h2>About InkVerse</h2>
+            <p>InkVerse is your ultimate destination for tracking and discovering the vast world of webtoons. We're passionate about stories and believe in connecting readers with captivating narratives from around the globe.</p>
+            <p>Our mission is to provide a seamless and engaging experience for every webtoon enthusiast, offering tools to organize your reading list, explore new genres, and stay updated with your favorite series.</p>
+            <p>Join us in celebrating the art of digital storytelling!</p>
+        </section>
+    </main>
+
+
+
+<footer class="site-footer">
+    <p>&copy; 2026 InkVerse. All rights reserved.</p>
+     <div class="social-icons">
+      <p>Follow us:</p>
+      <a href="#"><img src="images/youtube.jpg" alt="YouTube"></a>
+      <a href="#"><img src="images/tiktok.jpg" alt="TikTok"></a>
+      <a href="#"><img src="images/twitter.jpg" alt="Twitter"></a>
+      <a href="#"><img src="images/facebook.jpg" alt="Facebook"></a>
+      <a href="#"><img src="images/discord logo.jpg" alt="Discord"></a>
+    </div>
+    
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

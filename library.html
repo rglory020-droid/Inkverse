@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>InkVerse - Library</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body class="tech-vibe">
+  <header>
+    <div class="logo-container">
+      <img src="images/logo.png" alt="InkVerse Logo" class="logo">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="library.html">Library</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li class="dropdown">
+          <a href="#">Categories ▼</a>
+          <ul class="dropdown-menu">
+            <li><a href="genre.html">Genre</a></li>
+            <li><a href="status.html">Status</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <div class="search-container" style="text-align:center; margin:20px 0;">
+  <input type="text" 
+         id="searchInput" 
+         placeholder="Search webtoons..." 
+         onkeypress="if(event.key==='Enter'){handleSearch()}" 
+         style="padding:10px; width:300px; font-size:16px;">
+  <img src="images/mic.jpg" id="micButton" alt="Voice Search" class="mic-icon">
+</div>
+  <ul id="searchResults" class="search-results"></ul>
+    </div>
+  </header>
+
+<main>
+  <h2 class="section-title">Library</h2>
+
+  <div class="library-grid">
+   
+    <div class="hexagon-item">
+      <img src="images/eleceed.jpg" alt="Eleceed">
+      <h3>Eleceed</h3>
+      <p>Ongoing</p>
+    </div>
+
+    <div class="hexagon-item">
+      <img src="images/infinite mage.jpg" alt="Infinite Mage">
+      <h3>Infinite Mage</h3>
+      <p>Ongoing</p>
+    </div>
+
+    <div class="hexagon-item">
+      <img src="images/the world after the fall.jpg" alt="The World After The Fall">
+      <h3>The World After The Fall</h3>
+      <p>Ongoing</p>
+    </div>
+
+    <div class="hexagon-item">
+      <img src="images/orv.jpg" alt="Omniscient Reader's Viewpoint">
+      <h3>Omniscient Reader's Viewpoint</h3>
+      <p>Ongoing</p>
+    </div>
+
+    <div class="hexagon-item">
+      <img src="images/mercenary enrollment.jpg" alt="Mercenary Enrollment">
+      <h3>Mercenary Enrollment</h3>
+      <p>Ongoing</p>
+    </div>
+
+    <div class="hexagon-item">
+      <img src="images/the male leads little lion daughter.jpg" alt="The Male Lead's Little Lion Daughter">
+      <h3>The Male Lead's Little Lion Daughter</h3>
+      <p>Ongoing</p>
+    </div>
+
+    <div class="hexagon-item">
+      <img src="images/paws and claws.jpg" alt="Paws and Claws">
+      <h3>Paws and Claws</h3>
+      <p>Completed</p>
+    </div>
+
+    <div class="hexagon-item">
+      <img src="images/hive.jpg" alt="Hive">
+      <h3>Hive</h3>
+      <p>Completed</p>
+    </div>
+
+    <div class="hexagon-item">
+      <img src="images/the s classes that i raised.jpg" alt="The S Classes That I Raised">
+      <h3>The S Classes That I Raised</h3>
+      <p>Hiatus</p>
+    </div>
+
+    <div class="hexagon-item">
+      <img src="images/regas.jpg" alt="Regas">
+      <h3>Regas</h3>
+      <p>Hiatus</p>
+    </div>
+  </div>
+</main>
+
+
+  <footer class="site-footer">
+    <p>&copy; 2026 InkVerse. All rights reserved.</p>
+    <div class="social-icons">
+      <p>Follow us:</p>
+      <a href="#"><img src="images/youtube.jpg" alt="YouTube"></a>
+      <a href="#"><img src="images/tiktok.jpg" alt="TikTok"></a>
+      <a href="#"><img src="images/twitter.jpg" alt="Twitter"></a>
+      <a href="#"><img src="images/facebook.jpg" alt="Facebook"></a>
+      <a href="#"><img src="images/discord logo.jpg" alt="Discord"></a>
+    </div>
+  </footer>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
